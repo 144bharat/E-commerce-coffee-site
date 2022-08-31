@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+}
+#menu{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:60px;
+    width:90%;
+    margin:auto;
+    margin-top: 20px;
+}
+
+img{
+    height:300px;
+    width:100%;
+}
+#navbar{
+    background:rgb(1, 21, 28);
+    color:white;
+    display:flex;
+    justify-content:flex-end;
+    gap:50px;
+    font-size:2rem;
+    padding-right:20px;
+    height:10vh;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+#login_id,#signup_id
+{
+    cursor:pointer;
+}
+.addcart{
+    color:white;
+    background-color:#e8960a;
+    outline:none;
+    border:none;
+    width:100px;
+    height:40px;
+    border-radius:5px;
+    font-family:cursive;
+    font-weight:500;
+    font-size:17px;
+    cursor:pointer;
+}
+.addcart:hover{
+    background-color:#d28602;
+}
+.cartimg{
+    margin: auto;
+    height:35px;
+    width:35px;
+}
+#container{
+     display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:60px;
+    width:70%;
+    margin-left:40px;
+    /* margin:auto; */
+}
+#total-div{
+    transform: translateX(80vw) translateY(10vh);
+}
+#totalamount{
+    color:rgba(0, 107, 0, 0.745);
+    font-size: 24px;
+}
+
+#checkme{
+background-color: rgb(0, 21, 255);
+color:white;
+font-size: 20px;
+outline: none;
+border: none;
+font-family: cursive;
+cursor: pointer;
+transform:  translateX(80vw) translateY(20vh);
+/* margin-left: 80vw;
+margin-top:-20vh; */
+font-weight: 500;
+padding:5px;
+border-radius: 5px;
+}
+.removemyself{
+    background-color: crimson;
+    color:white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    padding: 5px;
+    font-weight: 550;
+    cursor: pointer;
+}
+#myback{
+    height:100px;
+    width:200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    color:darkcyan;
+    margin-top: 20px;
+    margin-left: 20px;
+    display:flex;
+    gap:10px;
+    cursor: pointer;
+}
+#myback>img{
+    margin:0px;
+    padding: 0px;
+    height:60px;
+    width:60px;
+}

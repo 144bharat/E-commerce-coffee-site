@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+        background-image: url("coffee.png");
+        background-repeat: no-repeat;
+        background-size:100vw 100vh;
+        }
+        h2{
+            color:white;
+            margin-top: 200px;
+            margin-left:  150px;
+            font-size:60px;
+            font-weight:500;
+            font-family:fantasy;
+        }
+        
+        h3{
+            color:white;
+            margin-top: 25px;
+            margin-left:  250px;
+            font-size:40px;
+            font-weight:400;
+            font-family:fantasy;
+                
+        }h4{
+            color:white;
+            margin-top: 25px;
+            margin-left:50px;
+            margin-right:5px;
+            font-size:40px;
+            font-weight:400;
+            font-family:fantasy;
+            cursor:pointer;
+                }
+            
+            #div-menu:hover{
+                text-decoration: underline white;
+                text-underline-offset: 10px;
+                text-underline-position: under;
+        
+            }
+            #div-menu{
+                display:flex;
+                width:30vw;
+
+            }
+            #menu-icon{
+                background-image:url("./menu.gif");
+                background-repeat:no-repeat;
+                background-size:100% 100%;
+                border-radius:50%;
+                /* clip-path: circle(40% at 50% 50%); */
+                height:65px;
+                width:65px;
+                margin-top: auto;
+            }
+            /* 
+            #menu-icon:hover{
+                background-image:url("https://tse2.mm.bing.net/th?id=OIP.uNQLY2QUF8sjudIFNHdL5QHaJl&pid=Api&P=0");
+                background-repeat:no-repeat;
+                background-size:100% 100%;
+                border-radius:50%;
+                height:75px;
+                width:60px;
+            } */
+        
+    </style>
+</head>
+<body>
+   <label id="div-menu">
+            <h4>Our Menu</h4>
+            <div id="menu-icon"></div>
+   </label>
+            <h2>COFFEE HOUSE</h2>
+    
+            <h3>BHARAT</h3>
+</body>
+</html>
+<script>
+    let h4=document.querySelector("label");
+    h4.addEventListener("click",function(){
+        window.location.href="./main.html";
+    })
+</script>

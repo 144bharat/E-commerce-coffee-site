@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+      *{
+        padding:0px;
+        margin:0px;
+      }
+      body{
+       
+        background-image:url("https://img.freepik.com/free-photo/top-view-bowls-with-coffee-beans-powder_23-2148937321.jpg?w=900&t=st=1661420353~exp=1661420953~hmac=fc40b2edfcb288c51e62a898bc9e30c6b21af216ec8777ada4d30a6bd56d6947");
+      background-repeat:no-repeat;
+      background-size:1380px 700px;
+      }
+      #order-form>form{
+        display:grid;
+      }
+      #order-form>form>input{
+      
+      width:160px;
+      outline:none;
+      border:none;
+      font-size:19px;
+      border-radius:5px;
+      margin-left:140px;
+      margin-top:40px;
+      
+      }
+      #place{
+        margin-top:60px;
+        margin-bottom:20px;
+        margin-left:140px;
+        font-family:cursive;
+        font-size:24px;
+        font-weight:700;
+        color:rgb(106, 93, 93);
+    text-shadow: 2px 2px 2px #ffffff;
+      }
+    #confirm{
+      color:white;
+      background-color:blue;
+      font-size: 20px;
+      cursor:pointer;
+      margin-left:300px;
+      margin-top:40px;
+      border:none;
+      padding:5px;
+      border-radius:5px;
+    }
+    #confirm:hover{
+      background-color:rgb(3, 204, 3);
+    }
+    </style>
+  </head>
+
+  <body>
+    <h3 id="place">Place Your Order :)</h3>
+    <div id="order-form">
+      <!--Add your form html element here-->
+      <!--In form, give #name,#number and #address as HTML id's to relevant input elements -->
+      <!-- confirm button with id "confirm" -->
+      <form>
+        <input type="text" id="name" placeholder="name">
+        <input type="number" id="number" placeholder="number">
+        <input type="text"id="address" placeholder="address">
+      
+      </form>
+      <button id="confirm">Order Now</button>
+    </div>
+  </body>
+</html>
+<script src="./scripts/checkout.js"></script>
